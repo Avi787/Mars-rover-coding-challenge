@@ -23,7 +23,7 @@ describe Rover do
         end
       end
  
-# Tests below for checking rovers position and direction after taking in the Test inputs for positon and movement instructions
+# Tests below for checking rovers position and direction after taking in the Test inputs positon and movement instructions
 
       describe "show_position" do    
         it "shows rover position after starting at (1, 2, N) and receiving instructions: LMLMLMLMM as per Test input" do
