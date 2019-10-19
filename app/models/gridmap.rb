@@ -20,7 +20,6 @@ class Gridmap
           puts "Input: "+line.to_s
           rover = Rover.new
           rover.set_grid_dimensions(0, @gridmax_x, 0, @gridmax_y)
-          #puts(rover.show_grid_dimensions)
           tmp_line = line.split(" ")
           rover.set_position(tmp_line[0].to_i, tmp_line[1].to_i, tmp_line[2])
         elsif (line_count % 2 == 1)
@@ -29,18 +28,12 @@ class Gridmap
             #puts(char)
             case
               when char == 'L'
-                #puts "Turning Left"
                 rover.left_turn
               when char == 'R'
-                #puts "Turning Right"
                 rover.right_turn
               when char == 'M'
-                #puts "Stepping"
                 rover.step 
-            end
-            #puts("XXXX")
-            #puts(rover.show_position)
-            #puts("YYYY")           
+            end         
           end
         end
         puts("Output: " + rover.show_position) unless (rover.nil? or line_count % 2 == 0) 
