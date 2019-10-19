@@ -18,7 +18,6 @@ class Rover
   end
    
   def show_position
-    #puts("x: " + @x.to_s + "| y: " + @y.to_s + "| direction: " + @direction)
     @x.to_s + " " + @y.to_s + " " + @direction
   end
   
